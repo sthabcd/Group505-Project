@@ -318,7 +318,27 @@ document.addEventListener('DOMContentLoaded', function() {
     handleResponsiveNavigation();
     window.addEventListener('resize', handleResponsiveNavigation);
 
-    
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                document.querySelector('nav').classList.remove('active');
+                navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+            
+            const targetId = this.getAttribute('href');
+            if (targetId.startsWith('#') && targetId.length > 1) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+
 
     document.querySelectorAll('nav').forEach(nav => {
         nav.setAttribute('role', 'navigation');
