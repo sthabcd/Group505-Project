@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Green Living - Eco-Friendly Products</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/picture1.png" alt="Green Living Logo">
+                <h1>Green Living</h1>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#featured-products">Products</a></li>
+                    <li><a href="#email">Subscribe</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#advice">Advice</a></li>
+                </ul>
+            </nav>
+           
+
+<div class="form-modal" id="formModal">
+
+          <div class="search-cart">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="cart-icon">
+        <a href="#cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+</div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+    <div class="hero-slideshow">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/picture11.png');"></div>
+        <div class="slide " style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/picture11.jpg');"></div>
+        <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/picture13.jpg');"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <h2>Welcome to Green Living</h2>
+            <p>Sustainable products for a better planet</p>
+        </div>
+    </div>
+</section>
+
+    <section id="featured-products" class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="productCarousel">
+                    <div class="carousel-item">
+                        <img src="images/picture2.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Organic Cotton Tote Bag （Large）</h3>
+                            <p>$24.99</p>
+                            <button class="btn-add-to-cart" data-id="1">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture3.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Beeswax Food Wraps （one packet）</h3>
+                            <p>$18.99</p>
+                            <button class="btn-add-to-cart" data-id="2">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture4.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Reusable Silicone Food Containers</h3>
+                            <p>$29.99</p>
+                            <button class="btn-add-to-cart" data-id="3">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture5.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Stainless Steel Water Bottle</h3>
+                            <p>$19.99</p>
+                            <button class="btn-add-to-cart" data-id="4">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture6.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Bamboo Toothbrush (Pack of 4)</h3>
+                            <p>$12.99</p>
+                            <button class="btn-add-to-cart" data-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture6.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Bamboo Toothbrush (Pack of 4)</h3>
+                            <p>$12.99</p>
+                            <button class="btn-add-to-cart" data-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture6.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Bamboo Toothbrush (Pack of 4)</h3>
+                            <p>$12.99</p>
+                            <button class="btn-add-to-cart" data-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/picture6.png" alt="Eco-friendly Product">
+                        <div class="carousel-caption">
+                            <h3>Bamboo Toothbrush (Pack of 4)</h3>
+                            <p>$12.99</p>
+                            <button class="btn-add-to-cart" data-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+             
+                </div>
+                <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+<section id="about" class="about-us">
+    <section id="eco-tips" class="eco-tips">
+        <div class="container">
+            <h2>Eco Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <img src="images/picture7.png" alt="Eco Tip">
+                    <h3>Reduce Plastic Use</h3>
+                    <p>Bring your own reusable bags, bottles and containers to reduce single-use plastic waste.</p>
+                </div>
+                <div class="tip-item">
+                    <img src="images/picture8.png" alt="Eco Tip">
+                    <h3>Save Energy</h3>
+                    <p>Switch to LED bulbs, unplug devices when not in use, and consider renewable energy options.</p>
+                </div>
+                <div class="tip-item">
+                    <img src="images/picture9.png" alt="Eco Tip">
+                    <h3>Water Conservation</h3>
+                    <p>Fix leaking faucets, take shorter showers, and collect rainwater for your garden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+    <section id="product-video" class="product-video">
+        <div class="container">
+            <h2>Our Commitment to Sustainability</h2>
+            <div class="video-container">
+                <video controls poster="images/picture10.png">
+                    <source src="videos/movie1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="contact-form">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get updates on new products and sustainability tips</p>
+            <form id="newsletterForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="interests">Interests:</label>
+                    <select id="interests" name="interests" required>
+                        <option value="" disabled selected>Select your interests</option>
+                        <option value="home">Eco-friendly Home Products</option>
+                        <option value="personal">Personal Care</option>
+                        <option value="food">Sustainable Food</option>
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any message or questions?"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/picture1.png" alt="Green Living Logo">
+                    <p>Green Living - Making sustainable choices easy</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home" class="active">Home</a></li>
+                            <li><a href="#featured-products">Products</a></li>
+                            <li><a href="#email">Subscribe</a></li>
+                            <li><a href="#about">About Us</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Group 505 Green Living. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal" id="addToCartModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Product Added to Cart</h2>
+            <p>Item has been added to your shopping cart.</p>
+            <div class="modal-buttons">
+                <button class="btn-continue">Continue Shopping</button>
+                <button class="btn-view-cart">View Cart</button>
+            </div>
+       
+            <div class="cart-coupon" id="cartCoupon">
+                <div class="coupon-form">
+                    <input type="text" v-model="couponCode" placeholder="Enter coupon code">
+                    <button v-on:click="applyCoupon">Apply</button>
+                </div>
+                <div v-if="couponApplied">
+                    <p class="success-message">Coupon applied successfully! Discount: ${{ discount }}</p>
+                </div>
+                <div v-else-if="couponInvalid">
+                    <p class="error-message">Invalid coupon code. Please try again.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+   
+
+    </body>
+    </html>
